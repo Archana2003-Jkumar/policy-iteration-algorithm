@@ -1,12 +1,14 @@
 # POLICY ITERATION ALGORITHM
-
 ## AIM
-Write the experiment AIM.
-
+To implement policy iteration for the given problem statement.
 ## PROBLEM STATEMENT
 Slippery Walk Five MDP
 ## POLICY ITERATION ALGORITHM
-
+1.In iteration we combine both the policy improvement and policy evaluation.
+2. For each iteration the policy is evaluated .
+3. And in accordance with that , policy is improved .
+4. This process is repeated until the optimal value becomes contant.
+5. It indicates that the policy is optimal and cannot be improved further.
 ## POLICY IMPROVEMENT FUNCTION
 ```
 def policy_improvement(V, P, gamma=1.0):
@@ -62,7 +64,15 @@ print('Reaches goal {:.2f}%. Obtains an average undiscounted return of {:.4f}.'.
 print_state_value_function(optimal_V, P, n_cols=7, prec=5)
 ```
 ## OUTPUT:
+### Policy Improvement:
+![image](https://github.com/Archana2003-Jkumar/policy-iteration-algorithm/assets/93427594/4a1281a8-a90c-4d3b-8e04-cc90770cb0b8)
+![image](https://github.com/Archana2003-Jkumar/policy-iteration-algorithm/assets/93427594/39a32a34-90e0-4d4a-9df7-1238795d1150)
+![image](https://github.com/Archana2003-Jkumar/policy-iteration-algorithm/assets/93427594/9aae90bc-6cca-49bc-8676-0ee27dc35fb3)
+![image](https://github.com/Archana2003-Jkumar/policy-iteration-algorithm/assets/93427594/2e2f01d8-ae2f-4659-92e8-176c60024360)
+### Policy Iteration:
+![image](https://github.com/Archana2003-Jkumar/policy-iteration-algorithm/assets/93427594/9b83b929-00aa-4d8f-a510-b5a96ce911cf)
+![image](https://github.com/Archana2003-Jkumar/policy-iteration-algorithm/assets/93427594/1ce91cc2-3c0e-461a-b287-9d5b0a428108)
+![image](https://github.com/Archana2003-Jkumar/policy-iteration-algorithm/assets/93427594/357b1b80-fc21-40c2-9175-eec9d4db02c1)
 
 ## RESULT:
-
-Write your result here
+Hence the policy iteration has been successfully implemented.
